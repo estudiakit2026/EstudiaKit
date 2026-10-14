@@ -1,0 +1,386 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7655e8">
+  <meta name="description" content="EstudiaKit: herramientas gratuitas para estudiantes. Resume apuntes, genera preguntas, calcula notas, organiza tareas y trabaja con archivos PDF.">
+  <meta name="keywords" content="herramientas para estudiantes, resumir textos, calcular notas, preguntas de estudio, organizar tareas, PDF">
+  <meta name="robots" content="index, follow">
+
+  <title>EstudiaKit — Estudia mejor, aprende más</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="#inicio" class="logo" aria-label="EstudiaKit, inicio">
+      <span class="logo-icon">E</span>
+      <span>EstudiaKit<span class="logo-punto">.</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#acerca">Acerca de</a>
+    </nav>
+
+    <a href="#herramientas" class="nav-button">Comenzar gratis ↗</a>
+  </header>
+
+  <main>
+    <!-- PRESENTACIÓN -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          TU ESPACIO PARA APRENDER MEJOR
+        </div>
+
+        <h1>Estudia mejor.<br>Aprende <span>más.</span></h1>
+
+        <p class="hero-description">
+          Herramientas sencillas para organizar tus apuntes,
+          practicar lo aprendido y aprovechar mejor tu tiempo.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#herramientas" class="button-primary">
+            Explorar herramientas <span>→</span>
+          </a>
+          <a href="#acerca" class="button-secondary">Conocer EstudiaKit</a>
+        </div>
+
+        <div class="hero-note">
+          <span>✓</span> Fácil de usar
+          <span>✓</span> Acceso desde tu navegador
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Vista ilustrativa de herramientas de estudio">
+        <div class="visual-glow"></div>
+
+        <div class="floating-card floating-card-top">
+          <span class="floating-icon purple-icon">✦</span>
+          <div>
+            <strong>Tu espacio de estudio</strong>
+            <small>Todo más organizado</small>
+          </div>
+        </div>
+
+        <div class="study-board">
+          <div class="board-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>Mi espacio de estudio</span>
+          </div>
+
+          <div class="board-welcome">
+            <span class="board-eyebrow">BIENVENIDO A ESTUDIAKIT</span>
+            <h3>¡Vamos a aprender! ✨</h3>
+            <p>Pequeños pasos, grandes resultados.</p>
+          </div>
+
+          <div class="board-tools">
+            <div class="mini-tool mini-purple">
+              <span>🎯</span>
+              <strong>Mis notas</strong>
+              <small>Calcula tu promedio</small>
+            </div>
+
+            <div class="mini-tool mini-blue">
+              <span>📝</span>
+              <strong>Mis apuntes</strong>
+              <small>Ideas más claras</small>
+            </div>
+
+            <div class="mini-tool mini-pink">
+              <span>📄</span>
+              <strong>Mis documentos</strong>
+              <small>Todo en orden</small>
+            </div>
+
+            <div class="mini-tool mini-yellow">
+              <span>🧠</span>
+              <strong>Mi práctica</strong>
+              <small>Repasa lo aprendido</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-bottom">
+          <span class="success-icon">✓</span>
+          <div>
+            <strong>Un paso a la vez</strong>
+            <small>¡Tú puedes lograrlo!</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="benefits" aria-label="Ventajas de EstudiaKit">
+      <div class="benefit">
+        <span class="benefit-icon">⚡</span>
+        <div>
+          <strong>Simple y práctico</strong>
+          <p>Sin complicaciones innecesarias.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">📚</span>
+        <div>
+          <strong>Hecho para estudiantes</strong>
+          <p>Herramientas para tu día a día.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">💜</span>
+        <div>
+          <strong>Un solo lugar</strong>
+          <p>Organiza mejor tu estudio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS -->
+    <section class="tools-section" id="herramientas">
+      <div class="section-heading">
+        <div>
+          <span class="section-eyebrow">TU CAJA DE HERRAMIENTAS</span>
+          <h2>¿Qué necesitas hacer hoy?</h2>
+          <p>Elige una herramienta y ponte manos a la obra.</p>
+        </div>
+
+        <span class="tools-count" id="contador-herramientas">6 herramientas</span>
+      </div>
+
+      <!-- BUSCADOR -->
+      <div class="tools-search">
+        <label for="buscar-herramienta">Buscar una herramienta</label>
+        <div class="search-input-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            id="buscar-herramienta"
+            placeholder="Ej. resumen, notas, PDF..."
+            autocomplete="off"
+            aria-describedby="mensaje-busqueda"
+          >
+        </div>
+        <p id="mensaje-busqueda" class="search-message" aria-live="polite">
+          Explora las herramientas disponibles.
+        </p>
+      </div>
+
+      <div class="tools-grid" id="lista-herramientas">
+
+        <!-- PDF -->
+        <article class="tool-card tool-purple" data-tool-card data-keywords="pdf documentos archivos imagen unir combinar convertir jpg png">
+          <div class="tool-card-top">
+            <div class="tool-icon">📄</div>
+            <span class="tool-label">DOCUMENTOS</span>
+          </div>
+          <h3>Herramientas PDF</h3>
+          <p>Une documentos o convierte tus imágenes en un solo PDF.</p>
+          <button class="tool-link" type="button" onclick="mostrarHerramienta('pdf')">
+            Explorar herramientas <span>→</span>
+          </button>
+        </article>
+
+        <!-- RESUMEN -->
+        <article class="tool-card tool-blue" data-tool-card data-keywords="resumen resumir apuntes texto estudiar ideas principales">
+          <div class="tool-card-top">
+            <div class="tool-icon">📝</div>
+            <span class="tool-label">PRODUCTIVIDAD</span>
+          </div>
+          <h3>Resumir apuntes</h3>
+          <p>Extrae las ideas principales de tus textos para repasarlos.</p>
+          <button class="tool-link" type="button" onclick="mostrarHerramienta('resumen')">
+            Crear un resumen <span>→</span>
+          </button>
+        </article>
+
+        <!-- PREGUNTAS -->
+        <article class="tool-card tool-pink" data-tool-card data-keywords="preguntas repaso estudiar examen practicar aprendizaje cuestionario">
+          <div class="tool-card-top">
+            <div class="tool-icon">🧠</div>
+            <span class="tool-label">APRENDIZAJE</span>
+          </div>
+          <h3>Preguntas de repaso</h3>
+          <p>Practica con preguntas basadas en tus propios apuntes.</p>
+          <button class="tool-link" type="button" onclick="mostrarHerramienta('preguntas')">
+            Practicar ahora <span>→</span>
+          </button>
+        </article>
+
+        <!-- CALCULADORA DE NOTAS -->
+        <article class="tool-card tool-yellow" data-tool-card data-keywords="notas calificaciones promedio ponderado puntos aprobar asignaturas">
+          <div class="tool-card-top">
+            <div class="tool-icon">🎯</div>
+            <span class="tool-label">CALIFICACIONES</span>
+          </div>
+          <h3>Calculadora de notas</h3>
+          <p>Calcula tu promedio y revisa tus resultados académicos.</p>
+          <button class="tool-link" type="button" onclick="mostrarHerramienta('notas')">
+            Calcular promedio <span>→</span>
+          </button>
+        </article>
+
+        <!-- ORGANIZADOR -->
+        <article class="tool-card tool-blue" data-tool-card data-keywords="organizador tareas pendientes lista actividades deberes trabajos">
+          <div class="tool-card-top">
+            <div class="tool-icon">✅</div>
+            <span class="tool-label">ORGANIZACIÓN</span>
+          </div>
+          <h3>Organizador de tareas</h3>
+          <p>Anota tus pendientes, organiza tus actividades y marca lo que termines.</p>
+          <button class="tool-link" type="button" onclick="mostrarHerramienta('organizador')">
+            Organizar tareas <span>→</span>
+          </button>
+        </article>
+
+        <!-- HORARIO -->
+        <article class="tool-card tool-pink" data-tool-card data-keywords="horario calendario sesiones planificación tiempo estudiar rutina">
+          <div class="tool-card-top">
+            <div class="tool-icon">🗓️</div>
+            <span class="tool-label">PLANIFICACIÓN</span>
+          </div>
+          <h3>Horario de estudio</h3>
+          <p>Planifica tus sesiones para distribuir mejor tu tiempo de estudio.</p>
+          <button class="tool-link" type="button" onclick="mostrarHerramienta('horario')">
+            Crear mi horario <span>→</span>
+          </button>
+        </article>
+
+      </div>
+
+      <div id="sin-resultados" class="workspace-empty" hidden>
+        <div class="workspace-empty-icon">🔎</div>
+        <h3>No encontramos esa herramienta</h3>
+        <p>Prueba con otra palabra, como «PDF», «notas» o «tareas».</p>
+      </div>
+
+      <!-- AQUÍ SE MOSTRARÁ LA HERRAMIENTA ELEGIDA -->
+      <div id="area-herramienta" class="workspace" aria-live="polite">
+        <div class="workspace-empty">
+          <div class="workspace-empty-icon">✦</div>
+          <h3>Tu espacio de trabajo</h3>
+          <p>Selecciona una de las herramientas para comenzar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACERCA DE -->
+    <section class="about-section" id="acerca">
+      <div class="about-illustration" aria-hidden="true">
+        <div class="about-paper">
+          <span>✦</span>
+          <div class="paper-line paper-line-long"></div>
+          <div class="paper-line"></div>
+          <div class="paper-line paper-line-short"></div>
+          <div class="paper-highlight">¡Tú puedes!</div>
+        </div>
+        <div class="about-sparkle sparkle-one">✦</div>
+        <div class="about-sparkle sparkle-two">✧</div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-eyebrow">UN MEJOR MODO DE ESTUDIAR</span>
+        <h2>Tu esfuerzo merece buenas herramientas.</h2>
+        <p>
+          EstudiaKit reúne herramientas sencillas para ayudarte a organizar
+          documentos, trabajar con tus apuntes, practicar lo aprendido y
+          administrar mejor tu tiempo.
+        </p>
+        <a href="#herramientas" class="button-primary">
+          Empezar a estudiar <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="closing-banner">
+      <div>
+        <span class="closing-sparkle">✦</span>
+        <h2>Hoy es un buen día para aprender algo nuevo.</h2>
+        <p>Empieza con una herramienta y avanza a tu ritmo.</p>
+      </div>
+      <a href="#herramientas" class="closing-button">Vamos allá →</a>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <a href="#inicio" class="logo footer-logo" aria-label="EstudiaKit, volver al inicio">
+      <span class="logo-icon">E</span>
+      <span>EstudiaKit<span class="logo-punto">.</span></span>
+    </a>
+
+    <p>Hecho para aprender, creado para avanzar. 💜</p>
+
+    <a href="#inicio" class="back-to-top">Volver arriba ↑</a>
+  </footer>
+
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- BUSCADOR DE HERRAMIENTAS -->
+  <script>
+    (() => {
+      const buscador = document.getElementById("buscar-herramienta");
+      const tarjetas = Array.from(document.querySelectorAll("[data-tool-card]"));
+      const contador = document.getElementById("contador-herramientas");
+      const mensaje = document.getElementById("mensaje-busqueda");
+      const sinResultados = document.getElementById("sin-resultados");
+
+      if (!buscador || !tarjetas.length) return;
+
+      const normalizar = (texto) =>
+        texto
+          .toLocaleLowerCase("es")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .trim();
+
+      buscador.addEventListener("input", () => {
+        const consulta = normalizar(buscador.value);
+        let visibles = 0;
+
+        tarjetas.forEach((tarjeta) => {
+          const contenido = normalizar(
+            tarjeta.innerText + " " + (tarjeta.dataset.keywords || "")
+          );
+
+          const coincide = contenido.includes(consulta);
+          tarjeta.hidden = !coincide;
+
+          if (coincide) visibles++;
+        });
+
+        if (contador) {
+          contador.textContent = `${visibles} ${visibles === 1 ? "herramienta" : "herramientas"}`;
+        }
+
+        if (sinResultados) {
+          sinResultados.hidden = visibles !== 0;
+        }
+
+        if (mensaje) {
+          mensaje.textContent = consulta
+            ? `${visibles} ${visibles === 1 ? "resultado encontrado" : "resultados encontrados"}.`
+            : "Explora las herramientas disponibles.";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
+```
